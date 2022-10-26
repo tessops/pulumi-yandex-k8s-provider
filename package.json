@@ -1,8 +1,8 @@
 {
     "name": "pulumi-yandex-k8s-provider",
-    "main": "bin/index.js",
+    "main": "dist/index.js",
     "scripts": {
-        "postinstall": "tsc",
+        "build": "tsc",
         "lint": "tslint --project ."
     },
     "devDependencies": {
