@@ -63,7 +63,7 @@ class YK8sProvider {
         this.provider = new k8s.Provider("yc", { kubeconfig: this.cluster.kubeconfig });
     }
     getProvider() {
-        return this;
+        return this.provider;
     }
     static getProvider(clusterName, namespace = "default") {
         const slug = `${clusterName}-${namespace}`;
