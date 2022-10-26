@@ -5,7 +5,7 @@ import * as yaml from "js-yaml";
 
 export default class YK8sProvider {
   private static providers: { [key: string]: k8s.Provider } = {};
-  public readonly provider: k8s.Provider;
+  private provider: k8s.Provider;
   public readonly cluster: pulumi.Output<{
     kubeconfig: string;
     // oidcIssuer: string;
