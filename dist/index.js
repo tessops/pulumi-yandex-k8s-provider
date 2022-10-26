@@ -73,6 +73,6 @@ class YK8sProvider {
         return YK8sProvider.providers[slug];
     }
 }
-exports.YK8sProvider = YK8sProvider;
+exports.default = YK8sProvider;
 YK8sProvider.providers = {};
 //# sourceMappingURL=index.js.map
