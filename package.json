@@ -13,6 +13,7 @@
         "@pulumi/kubernetes": "^3.22.0",
         "@pulumi/pulumi": "^3.0.0",
         "@pulumi/yandex": "^0.13.0",
-        "js-yaml": "^4.1.0"
+        "js-yaml": "^4.1.0",
+        "@types/js-yaml": "^4.0.5"
     }
 }
