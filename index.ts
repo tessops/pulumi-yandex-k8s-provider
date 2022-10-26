@@ -4,7 +4,7 @@ import * as yandex from "@pulumi/yandex";
 import * as yaml from "js-yaml";
 
 export default class YK8sProvider {
-  private static providers: { [key: string]: YK8sProvider } = {};
+  private static providers: { [key: string]: k8s.Provider } = {};
   public readonly provider: k8s.Provider;
   public readonly cluster: pulumi.Output<{
     kubeconfig: string;
@@ -79,13 +79,13 @@ export default class YK8sProvider {
   }
 
   public getProvider() {
-    return this;
+    return this.provider;
   }
 
   public static getProvider(
     clusterName: string,
     namespace: string = "default"
-  ): YK8sProvider {
+  ): k8s.Provider {
     const slug = `${clusterName}-${namespace}`;
     if (!YK8sProvider.providers[slug]) {
         YK8sProvider.providers[slug] = new YK8sProvider(
