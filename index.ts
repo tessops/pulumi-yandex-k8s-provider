@@ -3,7 +3,7 @@ import * as pulumi from "@pulumi/pulumi";
 import * as yandex from "@pulumi/yandex";
 import * as yaml from "js-yaml";
 
-export class YK8sProvider {
+export default class YK8sProvider {
   private static providers: { [key: string]: YK8sProvider } = {};
   public readonly provider: k8s.Provider;
   public readonly cluster: pulumi.Output<{
