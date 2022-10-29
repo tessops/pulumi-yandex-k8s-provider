@@ -35,7 +35,7 @@ The `YK8sProvider.getProvider` method takes two arguments, `clusterName` and `na
 
 `clusterName` is required.
 
-Provider asumes that you also hgave those variables in your Pulumi.<stackname>.yaml to interact with YandexCloud(Cloudil) api:
+Provider asumes that you also have those variables in your `Pulumi.<yourStackName>.yaml` to interact with YandexCloud(Cloudil) api:
 
 ```yaml
 yandex:cloudId: <cloudId>
