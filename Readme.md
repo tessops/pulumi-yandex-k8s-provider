@@ -1,6 +1,6 @@
 # Yandex Managed Kubernetes provider
 
-Pulumi-TS class implements provider for Managed Kubernetes Cluster in Yandex Cloud(Cloudil)
+Pulumi-TS class implements provider for Managed Kubernetes Cluster in Yandex Cloud(Cloudil) to interact with cluster resources.
 
 Usage:
 ```bash
